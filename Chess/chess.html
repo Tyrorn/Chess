@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of Chess?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+    <header>
+        <h1>Chess Master</h1>
+    </header>
+    <div id="announcement"></div>
+    <div id="gameBoard">
+        <button onclick="createBoard()">Start new Game</button>
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+
+    </div>
+
+
+    <div id="myModal" class="modal">
+    
+      <div class="modal-content">
+        <form id ="exchangePieceForm">
+            <input type="radio" name="choose" value ="Castle">Castle<br>
+            <input type="radio" name="choose" value ="Queen">Queen<br>
+            <input type="radio" name="choose" value ="Knight">Knight<br>
+            <input type="radio" name="choose" value ="Bishop">Bishop<br>
+            <input type ="button" id="selectPiece" value="Exchange Piece"><br>
+
+
+        </form>
+      </div>
+    
+    </div>
+    
+    <script src="Piece.js"></script>
+    <script src="board.js" ></script>
+    <script src="pieceCreation.js"></script>
+    <script src ="knight.js"></script>
+    <script src = "pawn.js"></script>
+    <script src="castle.js"></script>
+    <script src="bishop.js"></script>
+    <script src ="queen.js"></script>
+    <script src="king.js"></script>
+
+</body>
+</html>
